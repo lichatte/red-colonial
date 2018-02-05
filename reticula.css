@@ -1,0 +1,20 @@
+#reticula
+{
+	width: 100%;
+	top:0;
+	left:0;
+	margin:auto;
+	position: absolute;
+	height: 500px;
+	overflow: hidden;
+	z-index: 5;
+}
+
+#reticula div
+{
+	width: 4.2553%;
+	margin-right: 2.1276%;
+	height: 100%;
+	float: left;
+	opacity: 0.1;
+}

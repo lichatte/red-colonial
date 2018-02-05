@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Perfil</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="javascripts/vendor/modernizr.custom.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="layout.css">
+		<link rel="stylesheet" type="text/css" href="perfil.css">
+		<link rel="stylesheet" type="text/css" href="modal.css">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!-- el div principal y el div contenedor siempre se quedan igual lo unico cambia es los divs de adentro ya que en algunas
+        paginas son de 2 columnas, la pagina principal es de 3 y otras solo de 1 -->
+        <div class="contenedor over"><!-- contenedor contiene a las columnas principales; col es la abreviacion de columna -->
+			<div id="header">
+				<div id="Usuario">
+					<img src="imagenes/anonymous_user.png" />
+					<a href="perfil.html">Información de usuario</a>
+				</div>
+				<div id="logoFraccionamiento">
+					<img id="imgLogo" src="imagenes/logo.png" alt="Logotipo del fraccionamiento"/>
+					<h2><a>Fraccionamiento</a></h2>
+				</div>
+			</div>
+      
+			<div id="principal">
+				<div id="colMenu">
+					<ul>
+						<h2>Menú</h2>
+						<li class="menu" onclick="location.href='muro.html'"><p>Muro</p></li>
+						<li class="menu" onclick="location.href='propuestas.html'"><p>Propuestas</p></li>
+						<li class="menu"><p>Anuncios</p></li>
+						<li class="menu"><p>Palapas</p></li>
+						<li class="menu" onclick="location.href='documentos.html'"><p>Documentos</p></li>
+					</ul>
+				</div>
+	        	
+	        	<div id="colContenido" class="tresColumnas">
+	        		<h1>Tu perfil</h1>
+					
+					<article>
+						<div class='tabs tabs_default'>
+							<ul class='horizontal'>
+								<li><a href="#tab-1">Información personal</a></li>
+								<li><a href="#tab-2">Información bancaria</a></li>
+							</ul>
+							<div id='tab-1'>
+								<div class="info">
+									<img class="imgPerfil" src="imagenes/anonymous_user.png"/>
+									<h2>Marisol Gallegos</h2>
+									<table>
+										<tr>
+											<td class="labelInfo">Sexo</td>
+											<td>Femenino</td>
+										</tr>
+										<tr>
+											<td class="labelInfo">Dirección</td>
+											<td>Calle #123 Fraccionamiento</td>
+										</tr>
+									</table>
+								</div>
+								<div id="editar">
+									<img class="imgPerfil" src="imagenes/anonymous_user.png"/>
+									<div class="inline">
+										<label>Nombre </label><br><input type="text"/>
+									</div>
+									<div class="inline">
+										<label>Apellido </label><br><input type="text"/>
+									</div>
+									<br>
+									<div class="inline">
+										<label>Sexo </label>
+										<select>
+											<option>Masculino</option>
+											<option>Femenino</option>
+										</select>
+									</div>
+									<br>
+									<div class="inline">
+										<label>Dirección </label><br><input type="text"/>
+									</div>
+								</div>
+							</div>
+							<div id='tab-2' style="display:none;">
+								<div class="info">
+									<img class="imgPerfil" src="imagenes/anonymous_user.png"/>
+									<h2>Banco Banorte</h2>
+									<table>
+										<tr>
+											<td class="labelInfo">Cuenta bancaria</td>
+											<td>45217856231452</td>
+										</tr>
+										<tr>
+											<td class="labelInfo">Dirección</td>
+											<td>Calle #123 Fraccionamiento</td>
+										</tr>
+										<tr>
+											<td><a class="modalLink">Ver historial de pagos</a></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</article>
+	        	</div>
+        	</div>
+			
+			<div class="overlay"></div>
+			
+			<div class="modal">
+				<p class="closeBtn">Cerrar</p>
+				<table id="lista">
+					<thead>
+						<th>Mes</th>
+						<th>Estado</th>
+						<th>Fecha de pago</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Enero</td>
+							<td>Pagado y aprobado</td>
+							<td>02 de diciembre 2014</td>
+						</tr>
+						<tr>
+							<td>Febrero</td>
+							<td>Pagado y aprobado</td>
+							<td>04 de enero 2014</td>
+						</tr>
+						<tr>
+							<td>Marzo</td>
+							<td>Pagado</td>
+							<td>07 de febrero 2014</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>			
+			
+			<div id="footer">
+			</div>
+        </div>
+			
+		<!-- JQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+		<script type="text/javascript" src="javascripts/layout.js"></script>
+		<!-- JS -->
+		<script type="text/javascript" src="javascripts/vendor/waypoints.min.js"></script>
+		<script type="text/javascript" src="javascripts/vendor/waypoints-sticky.min.js"></script>
+		<script type="text/javascript" src="javascripts/vendor/jquery.tabslet.min.js"></script>
+		<script type="text/javascript" src="javascripts/vendor/rainbow-custom.min.js"></script>
+		<script type="text/javascript" src="javascripts/vendor/jquery.anchor.js"></script>
+		<script type="text/javascript" src="javascripts/initializers.js"></script>
+		<!-- JS ends -->
+		
+		<script type='text/javascript' src='javascripts/jquery.modal.js'></script>
+		<script type='text/javascript' src='javascripts/site.js'></script>
+    </body>
+</html>

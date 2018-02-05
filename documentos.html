@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Documentos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="layout.css">
+		<link rel="stylesheet" type="text/css" href="documentos.css">
+		<link rel="stylesheet" type="text/css" href="publicaciones.css">
+		
+		<script src="javascripts/vendor/jquery-1.9.1.min.js"></script>
+    </head>
+    <body>
+        <div class="contenedor over"><!-- contenedor contiene a las columnas principales; col es la abreviacion de columna -->
+			<div id="header">
+				<div id="Usuario">
+					<img src="imagenes/anonymous_user.png" />
+					<a href="perfil.html">Información de usuario</a>
+				</div>
+				<div id="logoFraccionamiento">
+					<img id="imgLogo" src="imagenes/logo.png" alt="Logotipo del fraccionamiento"/>
+					<h2><a>Fraccionamiento</a></h2>
+				</div>
+			</div>
+        <!-- el div principal y el div contenedor siempre se quedan igual lo unico cambia es los divs de adentro ya que en algunas
+        paginas son de 2 columnas, la pagina principal es de 3 y otras solo de 1 -->
+			<div id="colMenu">
+				<ul>
+					<h2>Menú</h2>
+					<li class="menu muro" onclick="location.href='index.html'"><p>Muro</p></li>
+					<li class="menu propuestas" onclick="location.href='propuestas.html'"><p>Propuestas</p></li>
+					<li class="menu anuncios"><p>Anuncios</p></li>
+					<li class="menu palapas" onclick="location.href='palapas.html'"><p>Palapas</p></li>
+					<li class="menu documentos" onclick="location.href='documentos.html'"><p>Documentos</p></li>
+				</ul>
+			</div>
+			
+			<div id="colContenido" class="dosColumnas">
+				<h1 id="tituloDocumentos">Documentos</h1>
+				<a class="agregar" href="#">+ Agregar documento</a>
+				
+				<div class="documento">
+					<img src="imagenes/documento.png" />
+					<div>Título del documento</div>
+				</div>
+				<div class="documento">
+					<img src="imagenes/documento.png" />
+					<div>Título del documento</div>
+				</div>
+				<div class="documento">
+					<img src="imagenes/documento.png" />
+					<div>Título del documento</div>
+				</div>
+				<div class="documento">
+					<img src="imagenes/documento.png" />
+					<div>Título del documento</div>
+				</div>
+				<div class="documento">
+					<img src="imagenes/documento.png" />
+					<div>Título del documento</div>
+				</div>
+				<div class="documento">
+					<img src="imagenes/documento.png" />
+					<div>Título del documento</div>
+				</div>
+			</div>
+			<div id="footer">
+			</div>
+        </div>
+		<script type="text/javascript" src="javascripts/layout.js"></script>
+		<script type="text/javascript">
+			$('.documentos').css('background-position', 'left');
+		</script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+/*--------------------------------*/
+/*----------------------*/
+
+.opcLista{
+	padding:20px 0;
+}
+.agregar
+{
+	position: absolute;
+	right: 0;
+	top:05%;
+	margin-right:03%;
+}
+.modificaciones
+{
+	text-align:right;
+}
+#tituloPropuestas{
+	color:#3498DB;
+}

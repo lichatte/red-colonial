@@ -1,0 +1,73 @@
+#contenedorInicio{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	overflow:hidden;
+	text-align:center;
+	color:#ffffff;
+}
+#imgInicio{
+	width:100%;
+	min-width:700px;
+	height:auto;
+}
+#logoInicio{
+	position:absolute;
+	top:35px;
+	left:35px;
+	width:60px;
+}
+#footerInicio{
+	position:absolute;
+	bottom:0;
+	padding:40px;
+	height:20%;
+	background-color:#2C3E50;
+}
+#footerInicio p {
+	min-width:500px;
+	width:60%;
+	margin:15px auto 0;
+}
+#footerInicio label{
+	background-image:url('imagenes/menu&pagos/menu_seleccionado.png');
+	background-repeat:repeat-x;
+	background-position:left;
+	padding:0 30px;
+}
+#textoSobreImagen{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:rgba(0,0,0,0.55);
+}
+#textoSobreImagen *{
+	position:absolute;
+	top:30%;
+	left:30%;
+	right:30%;
+	margin:0 auto;
+}
+#textoSobreImagen label{
+	font-size:150%;
+	width:40%;
+	min-width:250px;
+}
+#textoSobreImagen input[type="submit"]{
+	margin-top:95px;
+	min-width:130px;
+	width:130px;
+}
+#links{
+	position:absolute;
+	top:35px;
+	right:35px;
+}
+#links a{
+	color:#FFFFFF;
+	margin-left:55px;
+}

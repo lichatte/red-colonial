@@ -1,0 +1,117 @@
+/*----------------------------------------------*/
+/*--------Form del perfil de usuario------------*/
+
+form.perfil{
+	
+	width:60%;
+	height:100%;
+	margin:20px auto;
+	padding:20px;
+}
+div.separador{
+	margin:30px 0;
+}
+#direccion{
+	width:300px;
+}
+form.perfil img{
+	width:120px;
+	height:auto;
+	float:right;
+	margin:20px;
+}
+article{
+	margin: 0 auto;
+	padding: 30px 0 20px;
+	max-width: 940px;
+}
+
+ul.horizontal { /* Horizontal lists */
+	display: inline;
+	margin: 0
+}
+
+ul.horizontal > LI {
+	display: inline-block;
+}
+
+/**
+ * TABS
+ *
+ * -------------------------------------------------------------------------------------------------
+ */
+.tabs > DIV {
+	background-color:#ECF0F1;
+	color: #2C3E50 !important;
+	padding:60px;
+}
+.tabs LI {
+	background-color:#ECF0F1;
+}
+.tabs .horizontal a {
+	color: #BDC3C7;
+	display: block;
+	font-weight: 300;
+	font-size:18px;
+	padding: 14px 24px;
+	text-decoration: none;
+}
+.tabs LI:hover {
+	background: #BDC3C7;
+}
+.tabs LI:hover A {
+	color: #FFFFFF;
+}
+.active {
+	background-color: #1ABC9C !important;
+}
+.active A {
+	color: white !important;
+}
+.imgPerfil{
+	margin:0 25px 0 0;
+	width:200px;
+	float:left;
+}
+.info{
+	margin:50px auto;
+	width:65%;
+	padding: 0 0 50px;
+}
+.info a{
+	color:#2C3E50;
+}
+.info a:hover{
+	color:#1ABC9C;
+	-o-transition: color 0.2s linear;
+	-moz-transition: color 0.2s linear;
+	-khtml-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	-ms-transition: color 0.2s linear;
+	transition: color 0.2s linear;
+	cursor:pointer;
+}
+#editar{
+	display:none;
+}
+.labelInfo{
+	color:#7f8c8d;
+	padding-right:35px;
+	width:auto;
+}
+#lista{
+	margin:50px auto;
+	width:70%;
+	font-size:110%;
+}
+#lista td{
+	text-align:center;
+	border-bottom:solid 1px #BDC3C7;
+	padding:05px;
+}
+#lista th{
+	font-weight:normal;
+	padding:05px;
+	background-color:#1ABC9C;
+	color:#FFFFFF;
+}
