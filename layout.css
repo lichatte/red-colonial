@@ -1,0 +1,390 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300);
+
+/*-----------------------------------------------*/
+/*------------Especificaciones generales---------*/
+/*-----------------------------------------------*/
+*
+{
+	padding: 0;
+	margin:0;
+}
+textarea{
+	resize:none;
+	padding:05px;
+	-webkit-border-radius: 05px;
+    -moz-border-radius: 05px;
+    border-radius: 05px;
+}
+select{
+	padding:03px 05px;
+	-webkit-border-radius: 05px;
+    -moz-border-radius: 05px;
+    border-radius: 05px;
+	border: solid 1px #BDC3C7;
+}
+input[type="text"], input[type="password"]{
+	padding:05px;
+	-webkit-border-radius: 05px;
+    -moz-border-radius: 05px;
+    border-radius: 05px;
+	border: solid 1px #BDC3C7;
+}
+input[type="submit"]{
+	border:none;
+	padding:08px;
+	-webkit-border-radius: 05px;
+    -moz-border-radius: 05px;
+    border-radius: 05px;
+	color:#fff;
+	background-color:#1ABC9C;
+}
+input[type="submit"]:hover{
+	cursor:pointer;
+	
+	-webkit-font-smoothing: subpixel-antialiased;
+	
+	-webkit-transition: background-color .25s linear;
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: 0.25s, 0.25s, 0.25s;
+	-webkit-transition-timing-function: linear, linear, linear;
+	-webkit-transition-delay: initial, initial, initial;
+	transition: background-color .25s linear;
+	transition-property: background-color;
+	transition-duration: 0.25s, 0.25s, 0.25s;
+	transition-timing-function: linear, linear, linear;
+	transition-delay: initial, initial, initial;
+	
+	background-color:#1DCCA9;
+}
+h1, h2, h3{
+	font-weight:normal;
+}
+body
+{
+	background-color: #ddd;
+	font-family:Ebrima,sans-serif;
+	color:#2C3E50;
+	font-size:80%;
+	margin:20px 30px;
+}
+body.registrarse{
+	background-color: #304052;
+}
+a{
+	text-decoration:none;
+	color:#2C3E50;
+}
+a:hover{
+	color:#1ABC9C;
+	-o-transition: color 0.2s linear;
+	-moz-transition: color 0.2s linear;
+	-khtml-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	-ms-transition: color 0.2s linear;
+	transition: color 0.2s linear;
+	cursor:pointer;
+}
+li
+{
+	list-style-type: none;
+}
+/*-----------------------------------------------*/
+/*-----Clase para centrar un div en la página----*/
+/*-----------------------------------------------*/
+.contenedor 
+{
+	max-width: 1280px;
+	min-width: 780px;
+	margin:auto;
+	background-color: #fff;
+	position: relative;
+	-webkit-box-shadow: 0px 0px 11px 2px rgba(50, 50, 50, 0.20);
+	-moz-box-shadow:    0px 0px 11px 2px rgba(50, 50, 50, 0.20);
+	box-shadow:         0px 0px 11px 2px rgba(50, 50, 50, 0.20)
+}
+#header
+{
+	background-color: #fff;
+	height: 150px;
+}
+#header label{
+	font-size:120%;
+	font-weight:bold;
+}
+#imgLogo
+{
+	margin:25px;
+	height:100px;
+	float:left;
+}
+#logoFraccionamiento h2{
+	display:inline;
+	float:left;
+	margin-top:05%;
+}
+#Usuario img{
+	width:40px;
+	float:left;
+}
+#Usuario a{
+	float:right;
+	margin:10px 0 0 10px;
+}
+/*-----------------------------------------------*/
+/*--------Diseño de la pantalla de registro------*/
+/*Pantalla que el vecino ve al aceptar la invitación*/
+body.registrarse .contenedor
+{
+	max-width: 500px;
+	min-width: 320px;
+	position:relative;
+	margin:auto;
+}
+.registrarse form
+{
+	padding: 20px 5%;
+	width: 90%;
+	background-color: #eee;
+}
+.registrarse form input
+{
+	width: 95%;
+}
+.registrarse form input[type="submit"]
+{
+	background-color: #1eb99c;
+	width: 100%;
+	border:none;
+	color: white;
+	margin-top:20px;
+	padding: 15px;
+	font-weight: bold;
+}
+.registrarse form input[type="text"],
+.registrarse form input[type="password"]
+{
+	border: solid 1px #aaa;
+	padding: 18px 2.5%;
+	margin-top: 10px;
+}
+/*-----------------------------------------------*/
+/*-----Diseño de las columnas de los extremos----*/
+/*-----Una especificación para ambas columnas----*/
+#colPagos, #colMenu
+{
+	width: 17.02127%;
+	float: left;
+}
+/*-----------------------------------------------*/
+/*------Diseño de la columna de la izquierda-----*/
+/*----Columna con la información de los pagos----*/
+#colPagos
+{
+	background-color: #fff;
+}
+.pagosUsuario{
+	padding-top:10px;
+	margin:0 auto;
+	width:70%;
+}
+.mesPagado{
+	margin:05px 0;
+	padding:0 05px;
+	color:#FFFFFF;
+	width:153px;
+	background-color: #2ECC71;
+	background-image:url('imagenes/menu&pagos/pagado.png');
+	-webkit-border-radius: 05px;
+    -moz-border-radius: 05px;
+    border-radius: 05px;
+}
+.mesNoPago{
+	margin:05px 0;
+	padding:0 05px;
+	width:153px;
+	color:#FFFFFF;
+	background-color: #E74C3C;
+	background-image:url('imagenes/menu&pagos/nopagado.png');
+	-webkit-border-radius: 05px;
+    -moz-border-radius: 05px;
+    border-radius: 05px;
+}
+#infoBanco{
+	padding-top:10px;
+	margin:0 auto;
+	width:70%;
+}
+#infoBanco div{
+	padding:05px;
+	width:153px;
+	color:#FFFFFF;
+	height:80px;
+	background-color:#F39C12;
+	background-image:url('imagenes/menu&pagos/pagodelmes.png');
+	background-position:center;
+	background-repeat:no-repeat;
+	-webkit-border-radius: 05px;
+    -moz-border-radius: 05px;
+    border-radius: 05px;
+}
+#barra{
+	background-color:#ECF0F1;
+	height: 15px;
+	width:90%;
+	margin: 0 auto;
+}
+.listaPagosRetrasados{
+	padding-top:10px;
+	margin:0 auto;
+	width:70%;
+}
+.listaPagosRetrasados div{
+	padding:05px;
+	color:#FFFFFF;
+	background-color: #E74C3C;
+	-webkit-border-radius: 05px;
+    -moz-border-radius: 05px;
+    border-radius: 05px;
+}
+/*-----------------------------------------------*/
+/*---------Diseño del Menú de la izquierda-------*/
+/*----Este menú aparece en todas las pantallas---*/
+#colMenu{
+	background-color:#2C3E50;
+	padding-bottom:20px;
+	height:100%;
+	position:absolute;
+}
+#colMenu p{
+	color:#FFFFFF;
+	margin-left:35%;
+}
+#colMenu ul h2{
+	color:#1ABC9C;
+	font-weight:bold;
+}
+#colMenu li{
+	margin-top:15px;
+	padding:10px 0;
+}
+#colMenu li:hover{
+	cursor:pointer;
+	
+	-webkit-transition: background-color .25s linear;
+	-webkit-transition-property: background-color;
+	-webkit-transition-duration: 0.25s, 0.25s, 0.25s;
+	-webkit-transition-timing-function: linear, linear, linear;
+	-webkit-transition-delay: initial, initial, initial;
+	transition: background-color .25s linear;
+	transition-property: background-color;
+	transition-duration: 0.25s, 0.25s, 0.25s;
+	transition-timing-function: linear, linear, linear;
+	transition-delay: initial, initial, initial;
+	
+	background-color:#1E2A36;
+}
+#colMenu h2{
+	color:white;
+	margin-left:20%;
+	margin-top:25%;
+}
+.muro{
+	background-image:url('imagenes/menu&pagos/menu_seleccionado.png');
+	background-repeat:no-repeat;
+	background-position:-30px;
+}
+.muro:hover{
+	background-position:left;
+}
+.propuestas{
+	background-image:url('imagenes/menu&pagos/propuestas.png');
+	background-repeat:no-repeat;
+	background-position:-30px;
+}
+.propuestas:hover{
+	background-position:left;
+}
+.anuncios{
+	background-image:url('imagenes/menu&pagos/anuncios.png');
+	background-repeat:no-repeat;
+	background-position:-30px;
+}
+.anuncios:hover{
+	background-position:left;
+}
+.palapas{
+	background-image:url('imagenes/menu&pagos/palapas.png');
+	background-repeat:no-repeat;
+	background-position:-30px;
+}
+.palapas:hover{
+	background-position:left;
+}
+.documentos{
+	background-image:url('imagenes/menu&pagos/documentos.png');
+	background-repeat:no-repeat;
+	background-position:-30px;
+}
+.documentos:hover{
+	background-position:left;
+}
+/*-------------------------------------------*/
+#colContenido
+{
+	float: left;
+	background-color: #FFFFFF;
+	margin-left: 16.5%;
+}
+
+.over{
+	overflow: hidden;
+}
+
+/* ------------ columnas --------------- */
+
+.col3
+{
+	width: 17.02127%;
+}
+.col10
+{
+	width: 61.702127%;
+}
+.col13
+{
+	width: 80.85106%;
+}
+.col16
+{
+	width:100%;
+
+}
+
+.tresColumnas
+{
+	width: 61.702127%;
+	padding-left:2.12765%;
+	padding-right:2.12765%;
+}
+
+.dosColumnas
+{
+	width: 79%;
+	padding-left:2.12765%;
+	margin-right:05px;
+}
+
+/* ------------ Usuario ---------------- */
+
+#Usuario{
+	margin:30px;
+	float: right;
+}
+
+#footer
+{
+	clear:both;
+	height: 100px;
+	background-color: #ECF0F1;
+	position:relative;
+}

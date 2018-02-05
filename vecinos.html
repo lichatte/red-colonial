@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Vecinos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="layout.css">
+		<link rel="stylesheet" type="text/css" href="publicaciones.css">
+		
+		<script src="javascripts/vendor/jquery-1.9.1.min.js"></script>
+    </head>
+    <body>
+        <div class="contenedor over"><!-- contenedor contiene a las columnas principales; col es la abreviacion de columna -->
+			<div id="header">
+				<div id="Usuario">
+					<img src="imagenes/anonymous_user.png" />
+					<a href="perfil.html">Información de usuario</a>
+				</div>
+				<div id="logoFraccionamiento">
+					<img id="imgLogo" src="imagenes/logo.png" alt="Logotipo del fraccionamiento"/>
+					<h2><a>Fraccionamiento</a></h2>
+				</div>
+			</div>
+			<div id="colMenu">
+				<ul>
+					<h2>Menú</h2>
+					<li class="menu muro" onclick="location.href='index.html'"><p>Muro</p></li>
+					<li class="menu propuestas" onclick="location.href='propuestas.html'"><p>Propuestas</p></li>
+					<li class="menu anuncios"><p>Anuncios</p></li>
+					<li class="menu palapas" onclick="location.href='propuestas.html'"><p>Palapas</p></li>
+					<li class="menu documentos" onclick="location.href='documentos.html'"><p>Documentos</p></li>
+				</ul>
+			</div>
+			
+			<div id="colContenido" class="dosColumnas"><!-- Aqui es donde se cargara la mayor parte del contenido -->
+				<h1>Vecinos</h1>
+				
+				<div class="buscador">
+					<input type="text" placeholder="Buscar vecino"/>
+					<div class="iconoBusqueda"></div>
+				</div>
+				
+				<div class="opcLista">
+					<p>Ordenar por
+						<select>
+							<option>A-Z</option>
+							<option>Z-A</option>
+						</select>
+					</p>
+				</div>
+				
+				<ul class="listado">
+					<li>
+						<!-- <div class="tipoPublicacion">Propuesta</div> /// Tipo de publicacion no aparecea-->
+						<a href="id_usuario"><img class="imgUsuario" src="anonymous_user.png"/></a>
+						<h2 class="nombreUsuario"><a href="id_usuario">Nombre Usuario</a></h2>
+						<div class="calleVecino"><i>Calle vecino</i></div>
+						<div class="barraPagos"></div>
+						<a href="#">Ver pagos</a>
+					</li>
+					<li>
+						<!-- <div class="tipoPublicacion">Propuesta</div> /// Tipo de publicacion no aparecea-->
+						<a href="id_usuario"><img class="imgUsuario" src="anonymous_user.png"/></a>
+						<h2 class="nombreUsuario"><a href="id_usuario">Nombre Usuario</a></h2>
+						<div class="calleVecino"><i>Calle vecino</i></div>
+						<div class="barraPagos"></div>
+						<a href="#">Ver pagos</a>
+					</li>
+					<li>
+						<!-- <div class="tipoPublicacion">Propuesta</div> /// Tipo de publicacion no aparecea-->
+						<a href="id_usuario"><img class="imgUsuario" src="anonymous_user.png"/></a>
+						<h2 class="nombreUsuario"><a href="id_usuario">Nombre Usuario</a></h2>
+						<div class="calleVecino"><i>Calle vecino</i></div>
+						<div class="barraPagos"></div>
+						<a href="#">Ver pagos</a>
+					</li>
+				</ul>
+			</div>
+			<div id="footer">
+			</div>
+        </div>
+		<script type="text/javascript" src="javascripts/layout.js"></script>
+    </body>
+</html>

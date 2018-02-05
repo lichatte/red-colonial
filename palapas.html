@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Palapas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="layout.css">
+		<link rel="stylesheet" href="jquery.steps.css"/>
+		<link rel="stylesheet" href="jquery.datetimepicker.css"/>
+		
+		<script src="javascripts/wizard/modernizr-2.6.2.min.js"></script>
+        <script src="javascripts/vendor/jquery-1.9.1.min.js"></script>
+        <script src="javascripts/wizard/jquery.cookie-1.3.1.js"></script>
+        <script src="javascripts/wizard/jquery.steps.js"></script>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <div class="contenedor over"><!-- contenedor contiene a las columnas principales; col es la abreviacion de columna -->
+			<div id="header">
+				<div id="Usuario">
+					<img src="imagenes/anonymous_user.png" />
+					<a href="perfil.html">Información de usuario</a>
+				</div>
+				<div id="logoFraccionamiento">
+					<img id="imgLogo" src="imagenes/logo.png" alt="Logotipo del fraccionamiento"/>
+					<h2><a>Fraccionamiento</a></h2>
+				</div>
+			</div>
+			<div id="colMenu">
+				<ul>
+					<h2>Menú</h2>
+					<li class="menu muro" onclick="location.href='index.html'"><p>Muro</p></li>
+					<li class="menu propuestas" onclick="location.href='propuestas.html'"><p>Propuestas</p></li>
+					<li class="menu anuncios"><p>Anuncios</p></li>
+					<li class="menu palapas" onclick="location.href='propuestas.html'"><p>Palapas</p></li>
+					<li class="menu documentos" onclick="location.href='documentos.html'"><p>Documentos</p></li>
+				</ul>
+			</div>
+			
+			<div id="colContenido" class="dosColumnas"><!-- Aqui es donde se cargara la mayor parte del contenido -->
+				<h1 id="tituloPalapas">Palapas</h1>
+				
+				<script>
+                $(function ()
+                {
+                    $("#wizard").steps({
+                        headerTag: "h2",
+                        bodyTag: "section",
+                        transitionEffect: "fade",
+                        stepsOrientation: "vertical"
+                    });
+                });
+				</script>
+				
+				<div id="wizard">
+					<h2>Inicio</h2>
+					<section>
+						<p>Aquí separa la palapa de tu fraccionamiento para el evento que quieras. Con esta guía podrás ver cuándo están disponibles
+						 las palapas, y en 3 simples pasos puedes hacer tu reservación.<br><br> Dale click al botón 'Siguiente' para empezar.</p>
+					</section>
+
+					<h2>Escoge qué palapa separar</h2>
+					<section>
+						<p>Selecciona la palapa que vas a reservar.</p>
+						<div id="escogerPalapa">
+							<div class="crop">
+								<img class="palapa" src="imagenes/palapa1.jpg"/>
+							</div>
+							<div class="crop">
+								<img class="palapa" src="imagenes/palapa2.jpg"/>
+							</div>
+							<div class="crop">
+								<img class="palapa" src="imagenes/palapa3.jpg"/>
+							</div>
+						</div>
+					</section>
+
+					<h2>Cuándo la vas a reservar</h2>
+					<section>
+						<script type="text/javascript" src="javascripts/jquery.datetimepicker.js"></script>
+						<script type="text/javascript">
+							jQuery('#datetimepicker3').datetimepicker({
+							  formatDate:'Y/m/d',
+							  formatTime:'g:i A',
+							  inline:true,
+							  lang:'es',
+							  minTime:'08:00 AM',
+							  maxTime:'08:00 PM'
+							});
+						</script>
+						<p>Selecciona qué día y a qué hora será la reservación.</p>
+						<input type="text" id="datetimepicker3"/>
+					</section>
+
+					<h2>Confirmación</h2>
+					<section>
+						<p>Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula vulputate. Aliquam sed sem tortor. 
+							Quisque sed felis ut mauris feugiat iaculis nec ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae. 
+							Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo tortor.</p>
+					</section>
+				</div>
+			</div>
+			<div id="footer">
+			</div>
+        </div>
+		<script type="text/javascript" src="javascripts/layout.js"></script>
+		<script type="text/javascript">
+			$('.palapas').css('background-position', 'left');
+		</script>
+    </body>
+</html>

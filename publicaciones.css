@@ -1,0 +1,121 @@
+/*---------------------------------------*/
+/*---------Publicaciones en general------*/
+#publicaciones
+{
+	margin:15px 05px 0 0;
+}
+#publicaciones li
+{
+	border-top: 1px solid #BDC3C7;
+	margin-bottom:30px;
+}
+.nombrePublicacion + .textoPublicacion{
+	margin-left:80px;
+}
+.textoPublicacion{
+	margin-left:60px;
+}
+.imgUsuario
+{
+	width:60px;
+	height:auto;
+	margin:10px;
+	float:left;
+}
+.comentarios
+{
+	margin:35px auto;
+	width:90%;
+}
+.respuesta textarea{
+	width:70%;
+	display:inline;
+}
+.respuesta input[type="submit"]{
+	float:right;
+	position:relative;
+	top:-02px;
+}
+ul.comentarios .nombreUsuario{
+	font-size:125%;
+}
+.nombreUsuario{
+	padding-top:05px;
+}
+ul.comentarios .imgUsuario{
+	width:40px;
+	margin-top:15px;
+}
+.tipoPublicacion
+{
+	color: #fff;
+	padding: 10px;
+	float:right;
+}
+.feedPropuesta{
+	background-color: #3498DB;
+}
+.feedMuro{
+	background-color:#1ABC9C;
+}
+.feedAnuncio{
+	background-color:#9B59B6;
+}
+.feedPalapa{
+	background-color:#F39C12;
+}
+.feedDocumento{
+	background-color:#E74C3C;
+}
+.opcionesPublicacion{
+	float:right;
+	margin:0 15px;
+}
+.fecha{
+	color:#BDC3C7;
+	font-size:80%;
+}
+.agregar
+{
+	position: absolute;
+	right: 0;
+	top:25%;
+	margin-right:03%;
+	/*position:relative;
+	float:right;
+	top:-30px;*/
+}
+.modificaciones
+{
+	text-align:right;
+}
+.buscador{
+	float:right;
+}
+.buscador input{
+	width:250px;
+}
+.listado li{
+	margin:25px 0;
+}
+.callesFrac{
+	display:none;
+	margin-left:20%;
+	padding-top:0;
+}
+#tituloPropuestas{
+	color:#3498DB;
+}
+#tituloMuro{
+	color:#1ABC9C;
+}
+.inline{
+	font-size:90%;
+}
+#publicaciones .documento{
+	clear:both;
+	margin:15px 50%;
+}
+
+
+

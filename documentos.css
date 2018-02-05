@@ -1,0 +1,17 @@
+.documento{
+	float:left;
+	margin:10px;
+	text-align:center;
+	width:15%;
+	padding:15px;
+}
+.documento img{
+	width:45px;
+}
+.documento:hover{
+	cursor:pointer;
+	background-color:#ECF0F1;
+}
+#tituloDocumentos{
+	color:#E74C3C;
+}

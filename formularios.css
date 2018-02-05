@@ -1,0 +1,21 @@
+.inicioSesion{
+	margin:0 auto 15px;
+	width:350px;
+	background-color:#ECF0F1;
+	padding:50px;
+	text-align:center;
+}
+.inicioSesion > input
+{
+	width:60%;
+	margin:10px 0 10px;
+}
+.inicioSesion input[type="submit"]
+{
+	display:block;
+	margin:0 auto;
+}
+.inicioSesion a{
+	display:block;
+	margin:05% 0 0 55%;
+}
