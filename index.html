@@ -4,243 +4,56 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Muro</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="layout.css">
-		<link rel="stylesheet" type="text/css" href="publicaciones.css">
-		<link rel="stylesheet" type="text/css" href="documentos.css">
-		
-		<script src="javascripts/vendor/jquery-1.9.1.min.js"></script>
-	</head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>Red Colonial - Inicio</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="bienvenida.css"/>
+		<link rel="stylesheet" type="text/css" href="layout.css"/>
+		<link rel="stylesheet" type="text/css" href="modal.css"/>
+		<link rel="stylesheet" type="text/css" href="formularios.css">
+    </head>
     <body>
-		<div class="contenedor over"><!-- contenedor contiene a las columnas principales; col es la abreviacion de columna -->
-			<div id="header">
-				<div id="Usuario">
-					<img src="imagenes/anonymous_user.png" />
-					<a href="perfil.html">Información de usuario</a>
-				</div>
-				<div id="logoFraccionamiento">
-					<img id="imgLogo" src="imagenes/logo.png" alt="Logotipo del fraccionamiento"/>
-					<h2><a>Fraccionamiento</a></h2>
-				</div>
+		<div id="contenedorInicio">
+			<img src="fraccionamiento.jpg" id="imgInicio"/>
+			<div id="textoSobreImagen">
+				<label>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut</label>
+				<input type="submit" value="Iniciar sesión" class="modalLink"/>
 			</div>
-        <!-- el div principal y el div contenedor siempre se quedan igual lo unico cambia es los divs de adentro ya que en algunas
-        paginas son de 2 columnas, la pagina principal es de 3 y otras solo de 1 -->
-			<div id="colMenu">
-				<ul>
-					<h2>Menú</h2>
-					<li class="menu muro" onclick="location.href='index.html'"><p>Muro</p></li>
-					<li class="menu propuestas" onclick="location.href='propuestas.html'"><p>Propuestas</p></li>
-					<li class="menu anuncios"><p>Anuncios</p></li>
-					<li class="menu palapas" onclick="location.href='palapas.html'"><p>Palapas</p></li>
-					<li class="menu documentos" onclick="location.href='documentos.html'"><p>Documentos</p></li>
-				</ul>
+			<div id="links">
+				<a>Inicio</a>
+				<a>Acerca de</a>
+				<a>Contacto</a>
+				<a>Servicios</a>
+			</div>
+			<img src="imagenes/logo.png" id="logoInicio"/>
+			<div id="footerInicio">
+				<h2><label>¿Qué es Red Colonial?</label></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+				nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+				in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 			</div>
 			
-			<div id="colContenido" class="tresColumnas"><!-- Aqui es donde se cargara la mayor parte del contenido -->
-				<h1 id="tituloMuro">Muro</h1>
-				<ul id="publicaciones">
-					<li>
-						<div class="tipoPublicacion feedMuro">Publicación</div>
-						<a href="id_usuario"><img class="imgUsuario" src="imagenes/anonymous_user.png"/></a>
-						<h2 class="nombreUsuario"><a href="id_usuario">Nombre Usuario</a></h2>
-						<div class="fecha"><i>Publicado ayer</i></div>
-						<p class="textoPublicacion">Lorem ipsum dolor sit amet, blaaa bla bla bla..</p>
-						<div class="opcionesPublicacion">
-							<a href="#">Me gusta </a>
-							<a href="#"> Comentarios</a>
-						</div>
-						<!-- Comentarios: creamos otra lista, cada li sera un comentario -->
-						<ul class="comentarios">
-							<li>
-								<a href="id_usuario"><img class="imgUsuario" src="imagenes/anonymous_user.png"/></a>
-								<h2 class="nombreUsuario"><a href="id_usuario">Nombre Usuario</a></h2>
-								<div class="fecha"><i>Publicado ayer</i></div>
-								<p class="textoPublicacion">
-									Lorem ipsum dolor sit amet, blaaa bla bla bla..
-								</p>
-								<div class="opcionesPublicacion">
-									<a href="#">Me gusta </a>
-								</div>
-							</li>
-							<li class="respuesta">
-
-								<a href="id_usuario"><img class="imgUsuario" src="imagenes/anonymous_user.png"/></a>
-								<h2 class="nombreUsuario"><a href="id_usuario">Nombre Usuario</a></h2>
-								<textarea cols="50" rows="1"></textarea>
-							</li>
-						</ul>
-					</li>
-						<!-- se terminan los comentarios-->
-					<!-- ///////////// Propuesta /////////////////////// -->
-
-					<li>
-						<div class="tipoPublicacion feedPropuesta">Propuesta</div>
-						<a href="id_usuario"><img class="imgUsuario" src="imagenes/anonymous_user.png"/></a>
-						<h2 class="nombreUsuario"><a href="id_usuario">Nombre Usuario</a></h2>
-						<div class="fecha"><i>Publicado ayer</i></div>
-						<h3 class="nombrePublicacion">Titulo de la propuesta</h3>
-						<p class="textoPublicacion">
-							Lorem ipsum dolor sit amet, blaaa bla bla bla..
-						</p>
-						<div class="opcionesPublicacion">
-							<a href="#">Me gusta </a>
-							<a href="#"> Comentarios</a>
-						</div>
-						<ul class="comentarios">
-							<li>
-								<a href="id_usuario"><img class="imgUsuario" src="imagenes/anonymous_user.png"/></a>
-								<h2 class="nombreUsuario"><a href="id_usuario">Nombre Usuario</a></h2>
-								<div class="fecha"><i>Publicado ayer</i></div>
-								<p class="textoPublicacion">
-									Lorem ipsum dolor sit amet, blaaa bla bla bla..
-								</p>
-								<div class="opcionesPublicacion">
-									<a href="#">Me gusta </a>
-								</div>
-							</li>
-							<li class="respuesta">
-								<a href="id_usuario"><img class="imgUsuario" src="imagenes/anonymous_user.png"/></a>
-								<h2 class="nombreUsuario"><a href="id_usuario">Nombre Usuario</a></h2>
-								<textarea cols="50" rows="1"></textarea>
-							</li>
-						</ul>
-					</li>
-					
-					<li>
-						<div class="tipoPublicacion feedDocumento">Documento</div>
-						<a href="id_usuario"><img class="imgUsuario" src="imagenes/anonymous_user.png"/></a>
-						<h2 class="nombreUsuario">
-							<a href="id_usuario">El administrador</a>
-							<label class="inline">subió un nuevo archivo</label>
-						</h2>
-						<div class="fecha"><i>Hace 4 minutos</i></div>
-						
-						<div class="documento">
-							<img src="imagenes/documento.png"/>
-							<label>Archivo.pdf</label>
-							
-						</div>
-						
-					</li>
-				</ul>
-			</div>
-			<div id="colPagos">
-				<div id="barra"></div>
-				<div id="infoBanco">
-					<p>Cuenta bancaria</p>
-					<p>789687559521</p>
-					<p><a href="#">Banco Banorte</a></p>
-					<br>
-					<div>
-						<p>Próximo pago</p>
-						<p>09 de marzo de 2014</p>
-						<br>
-						<p>Cantidad: $200.50</p>
-					</div>
+			<div class="overlay"></div>
+			
+			<div id="modal1" class="modal">
+				<p class="closeBtn">Cerrar</p>
+				<div class="inicioSesion">
+					<h1>Iniciar sesión</h1>
+					<p class="error ocultar">Ups no encontramos tu correo electrónico</p>
+					<input name="correo" type="text" placeholder="Correo Electronico"/>
+					<input name="contrasenia" type="text" placeholder="Contraseña"/>
+					<input type="submit" value="Entrar" onclick="location.href='index.html'"/>
+					<a href="#">¿Olvidaste tu contraseña?</a>
 				</div>
-				<ul class="pagosUsuario">
-					<li><div class="mesNoPago">Marzo</div></li>
-					<li><div class="mesPagado">Febrero</div></li>
-					<li><div class="mesPagado">Enero</div></li>
-				</ul>
-				<br>
-				<ul class="listaPagosRetrasados">
-						<p>Vecinos pendientes</p>
-						<div>
-							<li><span class="calle">Calle</span><span class="numero">0000</span></li>
-							<li><span class="calle">Calle</span><span class="numero">0000</span></li>
-							<li><span class="calle">Calle</span><span class="numero">0000</span></li>
-							<li><span class="calle">Calle</span><span class="numero">0000</span></li>
-							<li><span class="calle">Calle</span><span class="numero">0000</span></li>
-						</div>
-				</ul>
-			</div>
-			<div id="footer">
 			</div>
 		</div>
-		<script type="text/javascript" src="javascripts/layout.js"></script>
-		<script type="text/javascript">
-		
-			function cargarFeed()
-			{
-				$.get("http://localhost:80/redcolonial/traerFeed.php", { idFraccionamiento:<%=Session("usuarioFraccionamiento")%> })
-					.done(function (data) {
-						for(var i=0;i<data.length;i++)  
-						{
-							var tipoPost = parseInt(data[i].idTipoPost);
-							
-							if(tipoPost === 2)
-							{
-								$.get("http://localhost:80/redcolonial/traerAnuncio.php", { id:data[i].idAnuncio,idFraccionamiento:<%=Session("usuarioFraccionamiento")%> })
-								.done(function(data)
-								{
-									var liData="<li>";
-									liData+="<div class='tipoPublicacion feedAnuncio'>Anuncio</div>";
-									liData+="<a href='id_usuario'><img class='imgUsuario' src='imagenes/anonymous_user.png'/></a>";
-									liData+="<div class=textoPublicacion>"
-									liData+="<h2 class='nombreUsuario'><a href='id_usuario'>" + data.nombreVecino +"</a><label class='inline'> subió un anuncio</label></h2>";
-									liData+="<p><i>Publicado "+ data.fechaPublicacion + "</i></p>";
-									liData+="<img src='imagenes/toraguy.png' class='imgAnuncio'/>";
-									liData+="<p class='texto'>" + data.contenido + "<p><i>Precio: $"+ data.precio + "</i></p></p>";
-									liData+="</div>";
-									liData+="</li>";
-									$(".publicaciones").append(liData);
-								});
-							}
-							else if(tipoPost===3)
-							{
-								//Cargar el post
-								$.get("http://localhost:80/redcolonial/traerPost.php", { id:data[i].idPost,idFraccionamiento:<%=Session("usuarioFraccionamiento")%> })
-								.done(function(data)
-								{
-									var liData="<li>";
-									liData+="<div class='tipoPublicacion feedMuro'>Publicación</div>";
-									liData+="<a href='id_usuario'><img class='imgUsuario' src='imagenes/anonymous_user.png'/></a>";
-									liData+="<div class=textoPublicacion>"
-									liData+="<h2 class='nombreUsuario'><a href='id_usuario'>" + data.nombreUsuario +"</a></h2>";
-									liData+="<i>Publicado "+ data.fechaPublicacion + "</i>";
-									liData+="<p>"+ data.datosPost+"</p>";
-									liData+="</div>";
-									liData+="<div class='clear'></div><div class='opcionesPublicacion'><a>Comentarios</a></div>";
-									liData+="<ul class='comentarios'></ul>";
-									liData+="</li>";
-									$(".publicaciones").append(liData);
-
-									//Cargar comentarios (si es que hay)
-									$.get("http://localhost:80/redcolonial/mostrarComentario.php", { id:data[i].idPost,idFraccionamiento:<%=Session("usuarioFraccionamiento")%> })
-									.done(function(data)
-									{
-										if(data.length > 0)
-										{
-											for(var i=0;i<data.length;i++)  
-											{
-												var liComentario="<li>";
-												liComentario+="<a href='id_usuario'><img class='imgUsuario' src='imagenes/anonymous_user.png'/></a>";
-												liComentario+="<h2 class='nombreUsuario'><a href='id_usuario'>" + data[i].nombreUsuario + "</a></h2>";
-												liComentario+="<i>Publicado " + data[i].fechaPublicacion + "</i>";
-												liComentario+="<p class='textoPublicacion'>" + data[i].comentario + "</p>";
-												liComentario+="<div class='opcionesPublicacion'><a href='#'>Me gusta </a></div>";
-												liComentario+="</li>"
-												$(".comentarios").append(liComentario);
-											 }
-										}
-									})	
-								})
-							}
-						}
-					})
-					.fail(function () {
-
-					})
-				}
-		
-		
-		
-			$('.menu').first().css('background-position', 'left');
-		</script>
+		<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+		<script type='text/javascript' src='javascripts/jquery.modal.js'></script>
+		<script type='text/javascript' src='javascripts/site.js'></script>
     </body>
 </html>
